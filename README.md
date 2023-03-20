@@ -1,5 +1,5 @@
 # basic-makefile-in-c
-<div id="badges" align="center">
+<div id="badges" align="left">
     <a href="https://medium.com/@hazikfuadidendi/basic-makefile-in-c-c-programming-d63518afeeb1">
         <img src="https://img.shields.io/badge/medium-basicmakefile-brigthgreen"/>
     </a>
