@@ -15,10 +15,10 @@ CFLAGS	:= -Wall -Wextra -g
 LFLAGS =
 
 # define output directory
-OUTPUT	:= bin
+OUTPUT	:= output
 
 # define source directory
-SRC		:= src
+SRC		:= sources
 
 # define include directory
 INCLUDE	:= include
@@ -73,14 +73,6 @@ $(OUTPUT):
 $(MAIN): $(OBJECTS) 
 	$(CC) $(CFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
 
-# this is a suffix replacement rule for building .o's from .c's
-# it uses automatic variables $<: the name of the prerequisite of
-# the rule(a .c file) and $@: the name of the target of the rule (a .o file) 
-# (see the gnu make manual section about automatic variables)
-.c.o:
-	$(CC) $(CFLAGS) $(INCLUDES) -c $<  -o $@
-
-.PHONY: clean
 clean:
 	$(RM) $(OUTPUTMAIN)
 	$(RM) $(call FIXPATH,$(OBJECTS))
