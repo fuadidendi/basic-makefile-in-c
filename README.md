@@ -11,13 +11,37 @@ In this project uses C programming language and Makefile as a way to build the p
 ## About the Project
 Simple example how to use makefile to build C source code.
 
-### Built With
 
 ## Getting Started
+Clone this repository, setup, and then run.
 
-### Installation on Windows
-If you are running in Windows system, make sure you have installed the make tools (e.x. MinGW).
+### Clone
+For clone this project
+```shell
+$ git clone https://github.com/fuadidendi/basic-makefile-in-c.git
+```
+### Setup
+#### Installation on Windows
+If you are running in Windows system, make sure you have installed the make tools (e.x. MinGW, Cygwin, CMake).
 
-### Installation on Linux
-
+#### Installation on Linux
+Just make sure there is make tools in your linux system. You can check your make tools by check the version.
+```shell
+$ make --version
+```
 ## Usage
+### Make only
+This will only compile the source
+```shell
+$ make
+```
+### Clean the compiled file
+This will clean the compiled file
+```shell
+$ make clean
+```
+### Make and run
+This will compile the source and then run the output file
+```shell
+make run
+```
